@@ -6,13 +6,16 @@ public class Test {
 	public static void main(String[] args) {
 
 		Persona p1=new Persona("María",25,"123");
-		Persona p2=new Persona("María",25,"123");
-		Persona p3=new Persona();		
-		
-		Empleado e1=new Empleado();
-		e1.setDni("1"); e1.setEdad(9); e1.setNombre("C");
-		System.out.println(e1);
+		Empleado e1=new Empleado("María",25,"123",1900);
 	
+		Persona x1= new Empleado();
+		Empleado e2=(Empleado)x1;
+		
+		
+		System.out.println(p1==e1);
+		
+		System.out.println(p1.equals(e1));
+		System.out.println(e1.equals(p1));
 	}
 
 }

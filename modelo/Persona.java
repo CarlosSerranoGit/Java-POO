@@ -51,7 +51,8 @@ public class Persona {
 			if (this == obj) {
 				result = true;
 			} else {
-				if (this.getClass() == obj.getClass()) {
+				//if (this.getClass() == obj.getClass())
+				if(obj instanceof Persona){
 					Persona tmp = (Persona) obj;
 					if (tmp!=null && this.dni!=null 
 							&& this.dni == tmp.dni) {
