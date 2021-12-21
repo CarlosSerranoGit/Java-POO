@@ -13,8 +13,11 @@ public class Test {
 		
 		Vehiculo[] vehiculos={c1,t1,m1};
 		
-		Vehiculo v=new Vehiculo("",0,"Cualquiera","otro");
-		Storage.saveVehiculo(v, "db.txt");
+		//Vehiculo v=new Vehiculo("",0,"Cualquiera","otro");
+		//Storage.saveVehiculo(v, "db.txt");
+		
+		Vehiculo almacenado=Storage.readVehiculo("db.txt");
+		System.out.println(almacenado);
 		
 		
 		
